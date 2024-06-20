@@ -36,7 +36,7 @@ The geometry in the Rhino file is created parametrically through a pretty heavy 
 
 ### Unit conversion PyScript
 
-In order to get around the whole imperial-to-decimal-inches constraint, I wrote a small regex script that reads anything resembling a *ft'in-fraction"* notation, including each component on its own (i.e. just *23/32"*) and spits out a decimal representation. I think this might prove helpful in future digital/BBR projects, please feel free to use the script and modify it.
+In order to get around the whole imperial-to-decimal-inches constraint, I wrote a small regex script that reads anything resembling a `ft'in-fraction"` notation, including each component on its own (i.e. just `23/32"`) and spits out a decimal representation. I think this might prove helpful in future digital/BBR projects, please feel free to use the script and modify it.
 
 ### Lofting measurement inputs
 
