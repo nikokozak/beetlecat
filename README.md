@@ -16,7 +16,7 @@ The fairness of the hull was checked extensively by comparing clipping planes to
 
 ### Molds
 
-The Rhino file contains a set of station molds, along with three transom support molds, all to a 1" plywood thickness. These can be scaled up or down to accommodate different sizes or mold thicknesses, but care **must** be taken to preserve corresponding distances between the molds. These distances are specified in the grasshopper file, under "Coordinates for Mold Planes", which call out the distance from FP to the **front-face of the mold**.
+The Rhino file contains a set of station molds, along with three transom support molds, all to a 1" plywood thickness. There is also a set of 1:3 scaled molds. Care **must** be taken to preserve corresponding distances between the molds when scaling, and **molds cannot be scaled only with the `scale` command**. This is because the `scale` command will alter the bevel of the molds - instead, I've provided part of a definition in the GH file that allows for the creation of scale molds; only rough shapes are produced, and these have to be further processed for final minafucture. 
 
 Once appropriately sized, supporting length-wise stringers can be made quite simply by a difference operation in order to slot into the molds and preserve their spacing when being installed. Also, optional *clamp holes* have been included, which can be used to difference out mold geometry and provide convenient locations for clamping.
 
